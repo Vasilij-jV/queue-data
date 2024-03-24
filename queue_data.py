@@ -5,8 +5,6 @@ from collections import defaultdict
 import threading
 import queue
 
-LIST_CUSTOMERS = []
-
 
 class Table:
 
@@ -86,5 +84,3 @@ customer_arrival_threads.start()
 
 customer_arrival_threads.join()
 
-for item in global_tables:
-    print(item.is_busy)
